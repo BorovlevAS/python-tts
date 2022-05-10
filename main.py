@@ -25,8 +25,6 @@ def process_file(file_name, language):
 
     print(f'File {fname} was generated!')
 
-    # sklfdjlksdjfl
-    
 
 def main():
     process_file('F:\\python-projects\\vscode-test\\PDF_Converter_Pro_Quick_Reference_Guide.RU.pdf', 'ru')
