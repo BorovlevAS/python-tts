@@ -10,7 +10,11 @@ def process_file(file_name, lang):
         print(f"Can't process {file_name}")
         return
     
-    
+    with open(file_name, 'rb') as fpdf:
+        text = high_level.extract_text(fpdf)
+
+    with open('text.txt', 'w', encoding='UTF-8') as fwr:
+        fwr.write(text.replace('\n', ''))
     
 
 def main():
